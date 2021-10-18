@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "/recipes" => "recipe#create"
   get "/recipes/:id" => "recipe#show"
   patch "/recipes/:id" => "recipe#update"
+  delete "/recipes/:id" => "recipe#destroy"
 end
