@@ -1,0 +1,12 @@
+GET http://localhost:3000/recipes.json
+
+###
+POST http://localhost:3000/recipes.json
+content-type: application/json
+
+{
+  "name": "Bread",
+  "ingredients": "water + flour",
+  "description": "one of the most versatile foods",
+  "cook_time": "300"
+}
