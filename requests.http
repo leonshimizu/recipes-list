@@ -13,3 +13,14 @@ content-type: application/json
 
 ###
 GET http://localhost:3000/recipes/3
+
+###
+PATCH http://localhost:3000/recipes/5
+content-type: application/json
+
+{
+  "name": "Bread",
+  "ingredients": "water + flour",
+  "description": "one of the most versatile foods",
+  "cook_time": "300"
+}

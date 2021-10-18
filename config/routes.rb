@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/recipes" => "recipe#index"
   post "/recipes" => "recipe#create"
   get "/recipes/:id" => "recipe#show"
+  patch "/recipes/:id" => "recipe#update"
 end

@@ -19,4 +19,13 @@ class RecipeController < ApplicationController
     recipe = Recipe.find_by(id: params[:id])
     render json: recipe.as_json
   end
+
+  def update
+    recipe = Recipe.find_by(id: params[:id])
+    recipe.name = params[:name] || recipe.name
+    recipe.ingredients = params[:ingredients] || recipe.ingredients
+    recipe.description = params[:description] || recipe.description
+    recipe.cook_time = params[:cook_time] || recipe.cook_time
+    render json: recipe.as_json
+  end
 end
