@@ -14,4 +14,9 @@ class RecipeController < ApplicationController
     recipe.save
     render json: recipe.as_json
   end
+
+  def show
+    recipe = Recipe.find_by(id: params[:id])
+    render json: recipe.as_json
+  end
 end
