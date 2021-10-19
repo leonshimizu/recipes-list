@@ -1,7 +1,7 @@
 class RecipeController < ApplicationController
   def index
     recipes = Recipe.all
-    render json: recipes.as_json(methods: [:ingredients_list, :friendly_cook_time])
+    render json: recipes
   end
 
   def create
@@ -12,12 +12,12 @@ class RecipeController < ApplicationController
       cook_time: params[:cook_time]
     )
     recipe.save
-    render json: recipe.as_json(methods: [:ingredients_list, :friendly_cook_time])
+    render json: recipe
   end
 
   def show
     recipe = Recipe.find_by(id: params[:id])
-    render json: recipe.as_json(methods: [:ingredients_list, :friendly_cook_time])
+    render json: recipe
   end
 
   def update
@@ -27,7 +27,7 @@ class RecipeController < ApplicationController
     recipe.description = params[:description] || recipe.description
     recipe.cook_time = params[:cook_time] || recipe.cook_time
     recipe.save
-    render json: recipe.as_json(methods: [:ingredients_list, :friendly_cook_time])
+    render json: recipe
   end
 
   def destroy

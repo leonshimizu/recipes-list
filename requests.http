@@ -12,10 +12,10 @@ content-type: application/json
 }
 
 ###
-GET http://localhost:3000/recipes/53.json
+GET http://localhost:3000/recipes/50.json
 
 ###
-PATCH http://localhost:3000/recipes/50
+PATCH http://localhost:3000/recipes/55
 content-type: application/json
 
 {
@@ -26,4 +26,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/recipes/51
+DELETE http://localhost:3000/recipes/55
