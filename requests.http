@@ -5,14 +5,14 @@ POST http://localhost:3000/recipes.json
 content-type: application/json
 
 {
-  "name": "Bread",
-  "ingredients": "water, flour, oil",
-  "description": "one of the most versatile foods",
-  "cook_time": "300"
+  "name": "Grilled cheese and tomato soup",
+  "ingredients": "bread, cheese, butter, olive oil, garlic, yellow onion, San Marzano peeled tomatoes, chicken stock, sugar, oregano, basil, heavy cream, salt, black pepper",
+  "description": "Super simple, but super tasty tomato soup that goes great with a grilled cheese or even by itself.",
+  "cook_time": "60"
 }
 
 ###
-GET http://localhost:3000/recipes/52.json
+GET http://localhost:3000/recipes/53.json
 
 ###
 PATCH http://localhost:3000/recipes/50
