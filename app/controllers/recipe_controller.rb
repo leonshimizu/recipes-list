@@ -17,7 +17,12 @@ class RecipeController < ApplicationController
 
   def show
     recipe = Recipe.find_by(id: params[:id])
-    render json: recipe.as_json
+    render json: {
+      id: recipe.id,
+      ingredients: recipe.ingredients_list,
+      description: recipe.description,
+      cook_time: recipe.cook_time
+    }
   end
 
   def update
