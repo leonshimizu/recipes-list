@@ -12,7 +12,7 @@ content-type: application/json
 }
 
 ###
-GET http://localhost:3000/recipes/52
+GET http://localhost:3000/recipes/52.json
 
 ###
 PATCH http://localhost:3000/recipes/50
