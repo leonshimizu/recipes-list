@@ -24,4 +24,8 @@ ActiveRecord::Schema.define(version: 2021_10_18_184616) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  change_table :recipes do |t|
+    t.remove :description
+    t.string :price
+  end
 end
